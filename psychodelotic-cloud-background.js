@@ -1,26 +1,30 @@
-
 function init() {
-    // Create renderer
+    // Create the scene, camera, and renderer
     let scene = new THREE.Scene();
     let camera = new THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 1, 4000);
     let renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+
+    // Configure renderer settings
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.toneMapping = THREE.ReinhardToneMapping;
-    renderer.setClearColor(0x000000, 0); // The second parameter (0) represents transparency (0-1)
+    renderer.setClearColor(0x000000, 0);
     renderer.domElement.style.position = 'fixed'
     renderer.domElement.style.zIndex = '-3'
     renderer.domElement.style.left = '0'
     renderer.domElement.style.top = '0'
     document.body.appendChild(renderer.domElement);
 
+    // Add ambient light to the scene
     let ambient = new THREE.AmbientLight(0x555555);
     scene.add(ambient);
 
+    // Add directional light to the scene
     let directionalLight = new THREE.DirectionalLight(0xff8c19);
     directionalLight.position.set(0, 0, 1);
     scene.add(directionalLight);
 
+    // Add point lights to the scene
     let orangeLight = new THREE.PointLight('orange', 100, 450, 1);
     orangeLight.position.set(200, 300, 100);
     scene.add(orangeLight);
@@ -41,12 +45,13 @@ function init() {
     const textureLoader = new THREE.TextureLoader();
     const smokeTexture = textureLoader.load('../images/smoke.png');
 
-
-    // Create 50 planes with smoke texture
+    // Create an array to store the planes
     const planes = [];
 
+    // Define colors for the planes
     const colors = [0xff0000, 0xffffff, 0x0000ff, 0xffa500]; // Red, White, Blue, Orange
 
+    // Create 50 planes with smoke texture
     for (let i = 0; i < 50; i++) {
         const planeGeometry = new THREE.PlaneGeometry(50, 50);
 
@@ -61,22 +66,25 @@ function init() {
         const planeMesh = new THREE.Mesh(planeGeometry, planeMaterial);
         scene.add(planeMesh);
 
+        // Set random positions for the planes
         planeMesh.position.set(
             Math.random() * 60 - 30,
             Math.random() * 60 - 30,
             Math.random() * 60 - 30
         );
 
+        // Set the plane's orientation towards the camera
         const lookAtVector = new THREE.Vector3();
         lookAtVector.subVectors(camera.position, planeMesh.position);
         planeMesh.quaternion.setFromUnitVectors(new THREE.Vector3(0, 0, 1), lookAtVector.normalize());
 
+        // Set a random rotation speed for each plane
         const speed = Math.random() * 0.005;
-
         planeMesh.userData.speed = speed;
         planes.push(planeMesh);
     }
 
+    // Adjust the camera aspect ratio and update renderer size on window resize
     window.addEventListener("resize", onWindowResize, false);
 
     function onWindowResize() {
@@ -107,12 +115,10 @@ function init() {
         whiteLight.position.x = Math.sin(Date.now() * 0.002) * 400;
         whiteLight.position.y = Math.cos(Date.now() * 0.002) * 400;
 
-
-        // Move the cube
+        // Move the point lights
         orangeLight.position.x += .5;
-        orangeLight.position.y += .5
+        orangeLight.position.y += .5;
 
-        //Move the cube
         blueLight.position.x += .5;
         blueLight.position.y -= .5;
 
