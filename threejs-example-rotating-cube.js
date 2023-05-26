@@ -8,19 +8,8 @@
 ////////////////////////////////////////////////////////////////////////////////////////////
 
 
-
-//Load the required resources from threejs
-import { OrbitControls } from '../jsm/controls/OrbitControls.js';
-import * as THREE from '../build/three.module.js';
-import { EffectComposer } from '../jsm/postprocessing/EffectComposer.js';
-import { RenderPass } from '../jsm/postprocessing/RenderPass.js';
-import { UnrealBloomPass } from '../jsm/postprocessing/UnrealBloomPass.js';
-import Stats from '../jsm/libs/stats.module.js';
-import { GUI } from '../jsm/libs/lil-gui.module.min.js';
-
 //set up the variables for the app
-let scene, camera, renderer, controls, manager, sound, stats,
-    analyser, composer, bloomPass, meshCube, cubeLight, gui, guiElement;
+let scene, camera, renderer, controls, manager, meshCube, cubeLight
 
 let mouseX = 0, mouseY = 0;
 let windowHalfX = window.innerWidth / 2;
@@ -28,7 +17,6 @@ let windowHalfY = window.innerHeight / 2;
 
 let previousTime = 0;
 const rotationSpeed = 0.08; // Adjust this value to control the rotation speed
-
 
 //create the parameters for post processing
 const params = {
@@ -39,8 +27,6 @@ const params = {
 };
 
 init();
-
-
 
 //initialize threejs
 function init() {
@@ -65,26 +51,6 @@ function init() {
     camera.updateProjectionMatrix();
     controls.update();
 
-    guiElement = document.getElementById("divGui");
-
-    //Stats display (not using at the moment)
-    stats = new Stats();
-    //guiElement.appendChild(stats.domElement);
-    stats.domElement.id = 'stats';
-
-    bloomPass = new UnrealBloomPass(new THREE.Vector2(window.innerWidth, window.innerHeight), 1.5, 0.4, 0.85);
-    bloomPass.threshold = params.bloomThreshold;
-    bloomPass.strength = params.bloomStrength;
-    bloomPass.radius = params.bloomRadius;
-
-    const renderScene = new RenderPass(scene, camera);
-
-    composer = new EffectComposer(renderer);
-    composer.addPass(renderScene);
-    composer.addPass(bloomPass);
-
-    composer.renderToScreen = true;
-
     loadCube();
 
     cubeLight = new THREE.PointLight(0xFFFFFF);
@@ -100,54 +66,9 @@ function init() {
     scene.add(dirLight);
 
 
-    // Create a new AudioListener
-    var listener = new THREE.AudioListener();
-
-    // Create a new AudioLoader
-    var audioLoader = new THREE.AudioLoader();
-
-    // Create a new Audio object and set the listener
-    var audio = new THREE.Audio(listener);
-
-    // Load the audio file
-    audioLoader.load('sounds/falcon-9-virtual-music.wav', function (buffer) {
-        // Set the audio buffer
-        audio.setBuffer(buffer);
-
-        // Set audio properties (optional)
-        audio.setLoop(true);
-        audio.setVolume(0.5);
-
-        // Play the audio
-        //audio.play();
-    });
-
-
-    // Add the audio object to your scene or object
-    scene.add(audio);
-
-    // Create an event listener for the play icon
-    document.getElementById('playIcon').addEventListener('click', function () {
-        audio.play();
-        document.getElementById('playIcon').style.display = 'none';
-        document.getElementById('pauseIcon').style.display = 'inline-block';
-    });
-
-    // Create an event listener for the pause icon
-    document.getElementById('pauseIcon').addEventListener('click', function () {
-        audio.pause();
-        document.getElementById('pauseIcon').style.display = 'none';
-        document.getElementById('playIcon').style.display = 'inline-block';
-    });
-
-
     window.addEventListener('pointermove', onPointerMove);
 
-    var playButton = document.getElementById('divPlayButton');
-    //playButton.addEventListener('pointerdown', playNow);
-
     window.addEventListener('resize', onWindowResize);
-
 
     // Start the animation loop
     animate(performance.now());
@@ -176,23 +97,6 @@ function onWindowResize() {
     // composer.setSize(window.innerWidth, window.innerHeight);
     renderer.setSize(window.innerWidth, window.innerHeight);
 
-    try {
-
-
-        if (window.innerWidth <= 800) {
-
-            document.getElementById("divGui").style.display = 'none';
-
-        } else {
-
-            document.getElementById("divGui").style.display = 'block';
-        }
-
-    } catch (error) {
-
-    }
-
-
 
 }
 
@@ -220,9 +124,7 @@ function animate(currentTime) {
 
     }
 
-   // meshCube.rotation.x = time * 0.25;
-   // meshCube.rotation.y = time * 0.5;
-
+  
     // Calculate delta time
     const deltaTime = (currentTime - previousTime) / 1000;
 
@@ -236,10 +138,6 @@ function animate(currentTime) {
     camera.lookAt(meshCube.position);
     camera.updateProjectionMatrix();
 
-
-    //stats.update();  (not using at the moment)
-
-    //composer.render();
 
     // Render the scene
     renderer.render(scene, camera);
