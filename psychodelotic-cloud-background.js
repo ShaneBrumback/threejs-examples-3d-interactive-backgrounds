@@ -39,7 +39,8 @@ function init() {
 
     // Load the smoke texture
     const textureLoader = new THREE.TextureLoader();
-    const smokeTexture = textureLoader.load('https://cdn.jsdelivr.net/gh/ShaneBrumback/threejs-3d-interactive-backgrounds/images/smoke.png');
+    const smokeTexture = textureLoader.load('../images/smoke.png');
+
 
     // Create 50 planes with smoke texture
     const planes = [];
