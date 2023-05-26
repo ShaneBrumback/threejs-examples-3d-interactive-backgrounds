@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33712.159
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "threejs-3d-interactive-backgrounds", ".", "{6DC48285-2B09-4E3D-A236-CF4A21C0C03B}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_59936"
+		Debug.AspNetCompiler.PhysicalPath = "..\threejs-3d-interactive-backgrounds\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59936\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_59936"
+		Release.AspNetCompiler.PhysicalPath = "..\threejs-3d-interactive-backgrounds\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59936\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "59936"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DC48285-2B09-4E3D-A236-CF4A21C0C03B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DC48285-2B09-4E3D-A236-CF4A21C0C03B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94BD3749-94A1-434A-BD5A-96F16BD02397}
+	EndGlobalSection
+EndGlobal

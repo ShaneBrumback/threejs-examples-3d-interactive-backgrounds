@@ -12,8 +12,11 @@
 //Load the required resources from threejs
 import { OrbitControls } from '../jsm/controls/OrbitControls.js';
 import * as THREE from '../build/three.module.js';
-
-
+import { EffectComposer } from '../jsm/postprocessing/EffectComposer.js';
+import { RenderPass } from '../jsm/postprocessing/RenderPass.js';
+import { UnrealBloomPass } from '../jsm/postprocessing/UnrealBloomPass.js';
+import Stats from '../jsm/libs/stats.module.js';
+import { GUI } from '../jsm/libs/lil-gui.module.min.js';
 
 //set up the variables for the app
 let scene, camera, renderer, controls, manager, sound, stats,
