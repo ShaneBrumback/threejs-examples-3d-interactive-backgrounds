@@ -46,7 +46,7 @@ function init() {
 
     const geometry = new THREE.BoxGeometry();
     const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-    controls = new OrbitControls(camera, renderer.domElement);
+    controls = new THREE.OrbitControls(camera, renderer.domElement);
     camera.position.set(604, -337, 316);
     camera.updateProjectionMatrix();
     controls.update();
