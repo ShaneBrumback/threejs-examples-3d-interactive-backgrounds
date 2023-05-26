@@ -8,11 +8,11 @@ function init() {
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.toneMapping = THREE.ReinhardToneMapping;
-    renderer.setClearColor(0x000000, 0);
-    renderer.domElement.style.position = 'fixed'
-    renderer.domElement.style.zIndex = '-3'
-    renderer.domElement.style.left = '0'
-    renderer.domElement.style.top = '0'
+    renderer.setClearColor(0x000000); // Set background color to black
+    renderer.domElement.style.position = 'fixed';
+    renderer.domElement.style.zIndex = '-3';
+    renderer.domElement.style.left = '0';
+    renderer.domElement.style.top = '0';
     document.body.appendChild(renderer.domElement);
 
     // Add ambient light to the scene
