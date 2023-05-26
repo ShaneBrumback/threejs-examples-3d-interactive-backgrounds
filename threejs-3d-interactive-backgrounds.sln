@@ -21,6 +21,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "threejs-3d-interactive-back
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "59936"
+		SlnRelativePath = "..\threejs-3d-interactive-backgrounds\"
 	EndProjectSection
 EndProject
 Global
