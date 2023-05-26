@@ -7,7 +7,7 @@ function init() {
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.toneMapping = THREE.ReinhardToneMapping;
-    renderer.setClearColor(0x000000, .5); // The second parameter (0) represents transparency (0-1)
+    renderer.setClearColor(0x000000, 0); // The second parameter (0) represents transparency (0-1)
     renderer.domElement.style.position = 'fixed'
     renderer.domElement.style.zIndex = '-3'
     renderer.domElement.style.left = '0'
