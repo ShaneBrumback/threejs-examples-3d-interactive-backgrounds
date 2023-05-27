@@ -23,16 +23,16 @@ https://github.com/ShaneBrumback/threejs-3d-interactive-backgrounds/assets/10612
 ## CDN Import
 
 Import Three.js to your web page
-<script src="https://cdn.jsdelivr.net/npm/three@latest/build/three.min.js"></script>
+https://cdn.jsdelivr.net/npm/three@latest/build/three.min.js
 
-Import Orbit Controls
-<script src="https://cdn.jsdelivr.net/npm/three@latest/examples/js/controls/OrbitControls.js"></script>
+Import OrbitControls
+https://cdn.jsdelivr.net/npm/three@latest/examples/js/controls/OrbitControls.js"
 
-Impoert Multi-Color Cloud Effect
-<script src="https://cdn.jsdelivr.net/gh/ShaneBrumback/threejs-examples-3d-interactive-backgrounds@master/threejs-examples-multi-color-rotating-clouds.js"></script>
+Import Multi-Color Cloud Effect
+https://cdn.jsdelivr.net/gh/ShaneBrumback/threejs-examples-3d-interactive-backgrounds@master/threejs-examples-multi-color-rotating-clouds.js
 
 Import Particle Cube Rotation
-<script src="https://cdn.jsdelivr.net/gh/ShaneBrumback/threejs-examples-3d-interactive-backgrounds@master/threejs-examples-rotating-particle-cube.js"></script>
+https://cdn.jsdelivr.net/gh/ShaneBrumback/threejs-examples-3d-interactive-backgrounds@master/threejs-examples-rotating-particle-cube.js"
 
 
 ## Introduction
