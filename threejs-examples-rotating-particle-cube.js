@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////////////////////
 ///                                                                                      ///
-///  Developer Interactive UIUX  2021-2022                                               ///
+///  Developer Interactive UIUX  2021-2023                                               ///
 ///  Contact Shane Brumback https://www.shanebrumback.com                                ///
 ///  Message me for questions about any of my projects                                   ///
 ///                                                                                      ///
@@ -111,18 +111,6 @@ function animate(currentTime) {
     camera.position.y += (- mouseY - camera.position.y) * 0.005;
 
     const time = Date.now() * 0.001;
-
-    if (sound) {
-
-        let freq = Math.round(getAverageFrequency() / 2);
-        bloomPass.threshold = freq / 100;
-        renderer.toneMappingExposure = Math.pow(1 + (freq / 50), 4.0) * Math.sin(time * .10);
-        bloomPass.strength = .5;
-        bloomPass.radius = freq / 200;
-        document.getElementById("divRange").style.width = ((freq * (500)) / 100) + 'px';
-        document.getElementById("divRangeFooter").style.width = ((freq * (500)) / 100) + 'px';
-
-    }
 
 
     // Calculate delta time
