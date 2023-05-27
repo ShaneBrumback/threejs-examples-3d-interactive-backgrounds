@@ -1,4 +1,4 @@
-# Creating Interactive 3D Backgrounds with Three.js
+# Three.js Examples Creating Interactive 3D Backgrounds
 
 ## Table of Contents
 - [Introduction](#introduction)
