@@ -11,6 +11,13 @@
 - [Responsive Design](#responsive-design)
 - [Conclusion](#conclusion)
 
+  
+  <script src="https://cdn.jsdelivr.net/npm/three@latest/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@latest/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@latest/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/ShaneBrumback/threejs-examples-3d-interactive-backgrounds@master/threejs-examples-multi-color-rotating-clouds.js"></script>
+  
+
 [Visit my website](https://www.shanebrumback.com)
 
 ![threejs-examples-animating-objects](https://github.com/ShaneBrumback/threejs-3d-interactive-backgrounds/assets/106123592/bab5d1b0-4ee3-47f9-8c65-24d8ea4fb841)
