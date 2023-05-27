@@ -11,9 +11,9 @@
 - [Responsive Design](#responsive-design)
 - [Conclusion](#conclusion)
 
+[Visit my website](https://www.shanebrumback.com)
 
-[![threejs-examples-animating-objects](https://github.com/ShaneBrumback/threejs-3d-interactive-backgrounds/assets/106123592/b70c1b0f-dbf9-4989-9add-8f3178807c67)](https://www.shanebrumback.com)
-
+[![threejs-examples-animating-objects](https://github.com/ShaneBrumback/threejs-3d-interactive-backgrounds/assets/106123592/b70c1b0f-dbf9-4989-9add-8f3178807c67)]
 
 https://github.com/ShaneBrumback/threejs-3d-interactive-backgrounds/assets/106123592/cf804808-24ad-4bd0-ab39-ca6c255241c1
 
