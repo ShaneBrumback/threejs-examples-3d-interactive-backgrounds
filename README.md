@@ -10,13 +10,7 @@
 - [Interactive Elements](#interactive-elements)
 - [Responsive Design](#responsive-design)
 - [Conclusion](#conclusion)
-
-  
-  <script src="https://cdn.jsdelivr.net/npm/three@latest/build/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@latest/examples/js/loaders/GLTFLoader.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@latest/examples/js/controls/OrbitControls.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/ShaneBrumback/threejs-examples-3d-interactive-backgrounds@master/threejs-examples-multi-color-rotating-clouds.js"></script>
-  
+- [CDN Import](#cdn-import)
 
 [Visit my website](https://www.shanebrumback.com)
 
@@ -25,6 +19,20 @@
 https://github.com/ShaneBrumback/threejs-3d-interactive-backgrounds/assets/106123592/cf804808-24ad-4bd0-ab39-ca6c255241c1
 
 ![Snapshot_27](https://github.com/ShaneBrumback/threejs-3d-interactive-backgrounds/assets/106123592/0ee11181-49f3-4809-b2ee-8ed34499ffc4)
+
+## CDN Import
+
+Import Three.js to your web page
+<script src="https://cdn.jsdelivr.net/npm/three@latest/build/three.min.js"></script>
+
+Import Orbit Controls
+<script src="https://cdn.jsdelivr.net/npm/three@latest/examples/js/controls/OrbitControls.js"></script>
+
+Impoert Multi-Color Cloud Effect
+<script src="https://cdn.jsdelivr.net/gh/ShaneBrumback/threejs-examples-3d-interactive-backgrounds@master/threejs-examples-multi-color-rotating-clouds.js"></script>
+
+Import Particle Cube Rotation
+<script src="https://cdn.jsdelivr.net/gh/ShaneBrumback/threejs-examples-3d-interactive-backgrounds@master/threejs-examples-rotating-particle-cube.js"></script>
 
 
 ## Introduction
