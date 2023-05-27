@@ -13,10 +13,9 @@
 
 [Visit my website](https://www.shanebrumback.com)
 
-[![threejs-examples-animating-objects](https://github.com/ShaneBrumback/threejs-3d-interactive-backgrounds/assets/106123592/b70c1b0f-dbf9-4989-9add-8f3178807c67)]
+![threejs-examples-animating-objects](https://github.com/ShaneBrumback/threejs-3d-interactive-backgrounds/assets/106123592/bab5d1b0-4ee3-47f9-8c65-24d8ea4fb841)
 
 https://github.com/ShaneBrumback/threejs-3d-interactive-backgrounds/assets/106123592/cf804808-24ad-4bd0-ab39-ca6c255241c1
-
 
 ![Snapshot_27](https://github.com/ShaneBrumback/threejs-3d-interactive-backgrounds/assets/106123592/0ee11181-49f3-4809-b2ee-8ed34499ffc4)
 
