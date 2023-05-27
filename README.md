@@ -11,6 +11,15 @@
 - [Responsive Design](#responsive-design)
 - [Conclusion](#conclusion)
 
+
+
+
+https://github.com/ShaneBrumback/threejs-3d-interactive-backgrounds/assets/106123592/c7b456e9-0d19-496e-8de1-e16bb346a112
+
+
+![Snapshot_27](https://github.com/ShaneBrumback/threejs-3d-interactive-backgrounds/assets/106123592/0ee11181-49f3-4809-b2ee-8ed34499ffc4)
+
+
 ## Introduction
 In this article, we will explore how to create an interactive 3D background using the powerful Three.js library. We'll dive into the code and understand how it enhances a website by adding dynamic lighting effects and animated elements.
 
